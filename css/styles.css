@@ -1,0 +1,173 @@
+
+/* -------------------------------DOCUMENT LEVEL CSS------------------------------------ */
+
+.home-section{
+    padding: 0 5vw
+}
+
+
+/* -------------------------------NAVBAR------------------------------------ */
+
+.nav {
+    margin: 0;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-image: linear-gradient(#000000, #00000000);
+    height: 12vh;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav-item {
+    color: white
+}
+
+.nav-list-left {
+    display: flex;
+    margin: 0;
+    padding: 0 0 0 5vw
+}
+
+.nav-list-right {
+    display: flex;
+    align-items: center;
+    padding: 0 5vw 0 0;
+    margin: 0
+}
+
+.nav-list-left li {
+    list-style: none;
+    margin-right: 3vw;
+}
+
+.nav-list-right li {
+    list-style: none;
+    margin-left: 24px;
+}
+
+.logomark {
+    max-width: 250px;
+    margin: 0 auto
+}
+
+.nav-item img {
+    max-width: 24px;
+    margin: 0 1vw 0 0;
+    padding: 0
+}
+
+.apply-link {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border: solid white 1px;
+}
+
+/* _________________________________EVENTS_______________________________ */
+
+.events-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 15vw
+}
+
+/* _________________________________GET A MMJ CARD_______________________________ */
+
+/* _________________________________WHAT STRAIN IS RIGHT FOR YOU?_______________________________ */
+
+.what-strain-wrapper {
+    display: flex;
+    gap: 9vw
+}
+.home-section hr{
+    max-width: 70%;
+    opacity: 70%;
+}
+
+/* _________________________________MEET US_______________________________  */
+
+.meet-us-wrapper {
+    display: grid;
+    max-width: 80vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "corey mike" "corey vanessa";
+}
+
+.corey {
+    grid-area: corey;
+}
+
+.mike {
+    grid-area: mike;
+}
+
+.vanessa {
+    grid-area: vanessa;
+}
+
+/* _________________________________NEED ADVICE_______________________________  */
+
+
+
+.need-advice-highlight{
+    background-color: #333132;
+    height: 10vh;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* _________________________________FOOTER_______________________________  */
+.footer{
+    background-color: #333132;
+}
+
+.footer-grid-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr .25fr;
+    column-gap: 15vw;
+    grid-template-areas: 
+    "about patients contact"
+    "social copyright button";
+}
+
+.footer-about {
+    max-width: 24ch;
+    color: white;
+    grid-area: about;
+}
+.footer-patients{
+    max-width: 24ch;
+    color: white;
+    grid-area: patients;
+    
+}
+.footer-contact{
+    max-width: 24ch;
+    color:white;
+    grid-area: contact;
+}
+.social{
+    color: white;
+    grid-area: social;
+}
+.copyright{
+    color: white;
+    grid-area: copyright;
+}
+.button{
+
+    grid-area: button;
+}
