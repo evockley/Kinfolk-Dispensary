@@ -6,7 +6,67 @@ body {
 }
 
 .home-section {
-    padding: 0 5vw
+    padding: 2vh 5vw
+}
+h1{
+    font-family: "Amiri";
+    font-size: 55px;
+    margin: 0;
+    padding:0;
+}
+h2{
+    font-family: "Noto Sans";
+    font-size: 32px;
+    margin: 0;
+    padding:0;
+}
+h2{
+    font-family: "Noto Sans";
+    font-size: 32px;
+    margin: 0;
+    padding:0;
+}
+h3{
+    font-family: "Noto Sans";
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+    padding:0; 
+}
+h4{
+    font-family: "Noto Sans";
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    padding:0; 
+}
+h5{
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    padding:0; 
+}
+h6{
+    font-family: "Amiri";
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    padding:0; 
+}
+p {
+    font-family: "Noto Sans";
+    font-size: 1em;
+    font-weight: 400;
+    margin: .5em 0;
+    padding:0; 
+}
+span{
+    font-family: "Noto Sans";
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+
 }
 
 /* -------------------------------BUTTONS AND LINKS------------------------------------ */
@@ -14,24 +74,40 @@ body {
 .link-out {
     display: flex;
     justify-content: flex-end;
-    margin: 1em 0
+    margin: 1em 0;
 }
 
-.primary-button{
+.primary-button {
     font-family: "Noto Sans";
- padding: 1em 3em;
- border: solid black 3px;
- border-radius: 24px;
- background-color: white;
-}
-
-.secondary-button{
-    font-family: "Noto Sans";
-    color: white;
     padding: 1em 3em;
     border: solid black 3px;
     border-radius: 24px;
+    background-color: white;
+    box-sizing: border-box;
+    transition: 150ms ease-in
+}
+
+.primary-button:hover {
     background-color: #333132;
+    color: white;
+    box-shadow: black 0 2px 6px;
+    border: solid #333132 3px;
+    cursor: pointer
+}
+
+.secondary-button {
+    font-family: "Noto Sans";
+    color: white;
+    padding: 1em 3em;
+    border: none;
+    border-radius: 24px;
+    background-color: #333132;
+    transition: 150ms ease-in
+}
+
+.secondary-button:hover {
+    box-shadow: #00000045 0 4px 6px;
+    cursor: pointer
 }
 
 /* -------------------------------NAVBAR------------------------------------ */
@@ -43,7 +119,7 @@ body {
     align-items: flex-end;
     justify-content: space-between;
     background-image: linear-gradient(#000000, #00000000);
-    height: 12vh;
+    height: 10vw;
     width: 100vw;
 }
 
@@ -142,9 +218,39 @@ body {
     background-color: #00000030;
 }
 
+
+
+
+/* _________________________________HERO_______________________________ */
+
+
+.hero{
+
+    background-image: linear-gradient(#FFFFFF, #d1d1d1);
+    height: 90vh;
+}
+.hero h1{
+    font-size: 3em;
+    letter-spacing: .1ch;
+    margin: 10px 0;
+}
+.hero p{
+    margin: 0 0 16px 0;
+   
+}
+.hero-content{
+position: absolute;
+bottom: 200px
+}
+
+
+
+
+
 /* _________________________________EVENTS_______________________________ */
 
 .events-wrapper {
+    margin: -16vh 0 0 0; 
     display: flex;
     justify-content: center;
     gap: 10%
@@ -167,6 +273,12 @@ body {
     height: 60vh;
     border-radius: 55px;
     box-shadow: lightgray 0 4px 10px;
+    box-sizing: border-box;
+    transition: 400ms ease-in;
+}
+
+.event-card:hover {
+    box-shadow: #c0c0c0 0 4px 20px;
 }
 
 .event-card-button {
@@ -179,6 +291,7 @@ body {
     background-image: url(/Users/evan/Documents/GitHub/Kinfolk-Dispensary/images/cooking.png);
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: 100%;
 }
 
 .right-event-card {
@@ -225,38 +338,53 @@ body {
 }
 
 .meet-us-item h3 {
-    color: #FFFFFF96;
+    color: #FFFFFF;
     margin: 0
 }
 
 .meet-us-item h5 {
-    color: #FFFFFF96;
+    color: #FFFFFF;
     margin: 0
 }
 
 .corey {
     background-image: url(/Users/evan/Documents/GitHub/Kinfolk-Dispensary/images/corey.png);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-size: 100%;
     grid-area: corey;
-    margin: 5vh 0
+    margin: 5vh 0;
+    transition: 600ms ease-out
+}
+
+.corey:hover {
+    background-size: 108%;
 }
 
 .mike {
     background-image: url(/Users/evan/Documents/GitHub/Kinfolk-Dispensary/images/mike.png);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-size: 100%;
     grid-area: mike;
+    transition: 600ms ease-out
+}
+
+.mike:hover {
+    background-size: 108%;
 }
 
 .vanessa {
     background-image: url(/Users/evan/Documents/GitHub/Kinfolk-Dispensary/images/vanessa.png);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-size: 100%;
     grid-area: vanessa;
+    transition: 600ms ease-out
+}
+
+.vanessa:hover {
+    background-size: 108%;
 }
 
 /* _________________________________NEED ADVICE_______________________________  */
@@ -264,45 +392,39 @@ body {
 .need-advice-box {
     background-color: #FFFBF9;
     margin: 0 auto;
-    padding: 0 0 24px 0;
+    padding: 16px 0 24px;
     border: solid black 2px;
     border-radius: 8px;
     min-width: 35vw;
     max-width: 35vw;
     text-align: center;
-    box-shadow: lightgray 0 0 10px;
+    box-shadow: #00000050 0 0 6px;
     position: absolute;
     left: 32vw;
-    
     z-index: 100000;
 }
 
 .need-advice-highlight {
     background-color: #333132;
-    height: 10vh;
+    height: 90px;
     padding: 0;
     position: relative;
     margin: 0;
     margin-bottom: 250px;
-    top: 120px;
+    top: 100px;
 }
 
 /* _________________________________MAP_______________________________  */
-.map-section{
+
+.map-section {
     margin: 0;
-    padding:0;
+    padding: 0;
 }
-#googleMap{
+
+#googleMap {
     width: 100%;
-margin: 30vh 0 0 0;}
-
-
-
-
-
-
-
-
+    margin: 30vh 0 0 0;
+}
 
 /* _________________________________FOOTER_______________________________  */
 
