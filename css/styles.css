@@ -327,28 +327,47 @@ bottom: 200px
     grid-template-areas: "corey mike" "corey vanessa";
 }
 
-.meet-us-item {
+
+.meet-us-item{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     border-radius: 8px;
-    box-shadow: lightgray 0 0 10px;
-    padding: 0 0 2em 2em;
-    cursor: pointer;
+    box-shadow: #c0c0c0 0 0 10px;
+    cursor: pointer
+}
+.meet-us-item:after{
+    content:"";
+    position:absolute;
+    bottom: 44px;
+    background: #35303260;
+    border-radius: 0 0 8px 8px;
+    height: 0px;
+    width: 100%;
+    z-index: -100; 
+    transition: 230ms ease
+}
+.meet-us-item:hover:after{
+    height: 88px;
+    bottom:0
 }
 
 .meet-us-item h3 {
-    color: #FFFFFF;
-    margin: 0
+    color: #ffffff;
+    opacity: 90%;
+    font-weight: 700;
+    margin: 0;
+    padding: 0 0 0 5%;
 }
 
 .meet-us-item h5 {
-    color: #FFFFFF;
-    margin: 0
+    color: #ffffff;
+    margin: 0;
+    padding: 0 0 1em 5%;
 }
 
 .corey {
-    background-image: url(/Users/evan/Documents/GitHub/Kinfolk-Dispensary/images/corey.png);
+    background-image: url("../images/corey.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -359,23 +378,29 @@ bottom: 200px
 
 .corey:hover {
     background-size: 108%;
+    filter: grayscale(100%);
+    box-shadow: #000000 0 0 12px;
+    
 }
 
+
 .mike {
-    background-image: url(/Users/evan/Documents/GitHub/Kinfolk-Dispensary/images/mike.png);
+    background: url("../images/mike.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
     grid-area: mike;
-    transition: 600ms ease-out
+    transition: 600ms ease-out;
 }
 
 .mike:hover {
-    background-size: 108%;
+    background-size: 110%;
+    filter: grayscale(100%);
+    box-shadow: #000000 0 0 12px;
 }
 
 .vanessa {
-    background-image: url(/Users/evan/Documents/GitHub/Kinfolk-Dispensary/images/vanessa.png);
+    background-image: url("../images/vanessa.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -385,6 +410,8 @@ bottom: 200px
 
 .vanessa:hover {
     background-size: 108%;
+    filter: grayscale(100%);
+    box-shadow: #000000 0 0 12px;
 }
 
 /* _________________________________NEED ADVICE_______________________________  */
