@@ -106,7 +106,7 @@ span {
     color: white;
     padding: 1em 3em;
     border: none;
- width: 200px;
+
     border-radius: 24px;
     background-color: #333132;
     transition: 150ms ease-in
@@ -303,8 +303,11 @@ span {
 
 /* _________________________________GET A MMJ CARD_______________________________ */
 .get-mmj-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 70%;
-    margin-bottom: 20vh;
+    margin: 0 auto 20vh auto;
 }
 .get-mmj-grid {
     display: grid;
@@ -315,7 +318,7 @@ span {
     "submit description" 
     "pay next";
     gap: 16px;
-    margin-bottom: 8vh;
+    margin-bottom: 2vh;
    
 }
 .get-mmj-grid p{
@@ -358,6 +361,7 @@ padding: 0;
     grid-area: next;
 margin: auto 2vw 0 auto
 }
+
 
 
 
