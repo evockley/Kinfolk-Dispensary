@@ -8,65 +8,71 @@ body {
 .home-section {
     padding: 2vh 5vw
 }
-h1{
+
+h1 {
     font-family: "Amiri";
     font-size: 55px;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
-h2{
-    font-family: "Noto Sans";
-    font-size: 32px;
-    margin: 0;
-    padding:0;
+
+h2 {
+    font-family: "Amiri";
+    font-size: 40px;
+    margin: 0 0 80px 0;
+    padding: 0;
 }
-h2{
-    font-family: "Noto Sans";
-    font-size: 32px;
-    margin: 0;
-    padding:0;
-}
-h3{
+
+h3 {
     font-family: "Noto Sans";
     font-size: 28px;
     font-weight: 400;
     margin: 0;
-    padding:0; 
+    padding: 0;
 }
-h4{
+
+h4 {
     font-family: "Noto Sans";
     font-size: 24px;
     font-weight: 400;
     margin: 0;
-    padding:0; 
+    padding: 0;
 }
-h5{
+
+h5 {
     font-family: "Noto Sans";
     font-size: 18px;
     font-weight: 400;
     margin: 0;
-    padding:0; 
+    padding: 0;
 }
-h6{
+
+h6 {
     font-family: "Amiri";
     font-size: 18px;
     font-weight: 400;
     margin: 0;
-    padding:0; 
+    padding: 0;
 }
+
 p {
     font-family: "Noto Sans";
     font-size: 1em;
     font-weight: 400;
     margin: .5em 0;
-    padding:0; 
+    padding: 0;
 }
-span{
+
+span {
     font-family: "Noto Sans";
     font-weight: 700;
     margin: 0;
     padding: 0;
+}
 
+.section-heading{
+    display: flex;
+    justify-content: center;
 }
 
 /* -------------------------------BUTTONS AND LINKS------------------------------------ */
@@ -100,6 +106,7 @@ span{
     color: white;
     padding: 1em 3em;
     border: none;
+ width: 200px;
     border-radius: 24px;
     background-color: #333132;
     transition: 150ms ease-in
@@ -218,39 +225,32 @@ span{
     background-color: #00000030;
 }
 
-
-
-
 /* _________________________________HERO_______________________________ */
 
-
-.hero{
-
+.hero {
     background-image: linear-gradient(#FFFFFF, #d1d1d1);
     height: 90vh;
 }
-.hero h1{
+
+.hero h1 {
     font-size: 3em;
     letter-spacing: .1ch;
     margin: 10px 0;
 }
-.hero p{
+
+.hero p {
     margin: 0 0 16px 0;
-   
-}
-.hero-content{
-position: absolute;
-bottom: 200px
 }
 
-
-
-
+.hero-content {
+    position: absolute;
+    bottom: 200px
+}
 
 /* _________________________________EVENTS_______________________________ */
 
 .events-wrapper {
-    margin: -16vh 0 0 0; 
+    margin: -16vh 0 0 0;
     display: flex;
     justify-content: center;
     gap: 10%
@@ -302,12 +302,72 @@ bottom: 200px
 }
 
 /* _________________________________GET A MMJ CARD_______________________________ */
+.get-mmj-wrapper{
+    max-width: 70%;
+    margin-bottom: 20vh;
+}
+.get-mmj-grid {
+    display: grid;
+    grid-template-columns: .8fr 2fr;
+    grid-template-rows: 1fr 1fr .25fr .5fr;
+    grid-template-areas:
+    "schedule description" 
+    "submit description" 
+    "pay next";
+    gap: 16px;
+    margin-bottom: 8vh;
+   
+}
+.get-mmj-grid p{
+margin: 0 0 0 8%;
+padding: 0;
+
+}
+
+.schedule {
+    grid-area: schedule;
+    border: 1px solid black;
+    border-radius: 16px 16px 16px 16px;
+    padding: 2vh 0 2vh 40%
+}
+
+.submit {
+    grid-area: submit;
+    background-color: #d1d1d1;
+    /* border: 1px solid black; */
+    opacity: 50%;
+    border-radius: 16px 16px 16px 16px;
+    padding: 2vh 0 2vh 40%
+}
+
+.pay {
+    grid-area: pay;
+    background-color: #d1d1d1;
+    opacity: 50%;
+    /* border: 1px solid black; */
+    border-radius: 16px 16px 16px 16px;
+    padding: 2vh 0 2vh 40%
+}
+
+
+.get-mmj-description {
+    grid-area: description;
+    font-size: larger;
+}
+.get-mmj-next{
+    grid-area: next;
+margin: auto 2vw 0 auto
+}
+
+
 
 /* _________________________________WHAT STRAIN IS RIGHT FOR YOU?_______________________________ */
-.what-strain-section{
-   margin: 2vh 0;
+
+.what-strain-section {
+    margin: 2vh 0;
 }
-.what-strain-background{
+
+.what-strain-background {
     background: url("../images/plantBackground.png")
 }
 
@@ -316,14 +376,15 @@ bottom: 200px
     justify-content: space-between;
     text-align: center;
     gap: 7vw;
-    padding: 0 3em; 
+    padding: 0 3em;
 }
-.what-strain-card-header{
+
+.what-strain-card-header {
     height: 12vh;
     padding: 2em
 }
 
-.what-strain-card{
+.what-strain-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -332,21 +393,19 @@ bottom: 200px
     margin: 15vh 0;
     border-radius: 55px 55px 20px 20px;
     box-shadow: #00000050 0 0 10px;
-    
 }
 
-
-.what-strain-card img{
+.what-strain-card img {
     max-width: 120px;
     padding: 2em 0;
 }
 
-
-.what-strain-card p{
+.what-strain-card p {
     color: white;
     margin: 2em 2em 2em 2em;
 }
-.what-strain-card-content{
+
+.what-strain-card-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -355,11 +414,12 @@ bottom: 200px
     height: 100%;
     padding-bottom: 10%;
     border-radius: 0 0 20px 20px;
-    
 }
-.home-section hr {
+
+hr {
     max-width: 70%;
     opacity: 70%;
+    margin: 0 auto 24px;
 }
 
 /* _________________________________MEET US_______________________________  */
@@ -367,15 +427,14 @@ bottom: 200px
 .meet-us-wrapper {
     display: grid;
     justify-content: center;
-    max-width: 80vw;
-    grid-template-columns: 38% 38%;
-    grid-template-rows: 30vh 30vh;
+    padding: 0 20%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30vh 30vh 24px;
     gap: 1.5rem;
-    grid-template-areas: "corey mike" "corey vanessa";
+    grid-template-areas: "corey mike" "corey vanessa" "link link";
 }
 
-
-.meet-us-item{
+.meet-us-item {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -383,20 +442,22 @@ bottom: 200px
     box-shadow: #c0c0c0 0 0 10px;
     cursor: pointer
 }
-.meet-us-item:after{
-    content:"";
-    position:absolute;
+
+.meet-us-item:after {
+    content: "";
+    position: absolute;
     bottom: 44px;
     background: #35303260;
     border-radius: 0 0 8px 8px;
     height: 0px;
     width: 100%;
-    z-index: -100; 
+    z-index: -100;
     transition: 230ms ease
 }
-.meet-us-item:hover:after{
+
+.meet-us-item:hover:after {
     height: 88px;
-    bottom:0
+    bottom: 0
 }
 
 .meet-us-item h3 {
@@ -427,9 +488,7 @@ bottom: 200px
     background-size: 108%;
     filter: grayscale(100%);
     box-shadow: #000000 0 0 12px;
-    
 }
-
 
 .mike {
     background: url("../images/mike.png");
@@ -460,6 +519,9 @@ bottom: 200px
     filter: grayscale(100%);
     box-shadow: #000000 0 0 12px;
 }
+.link-out{
+    grid-area: link;
+}
 
 /* _________________________________NEED ADVICE_______________________________  */
 
@@ -480,7 +542,7 @@ bottom: 200px
 
 .need-advice-highlight {
     background-color: #333132;
-    height: 90px;
+    height: 120px;
     padding: 0;
     position: relative;
     margin: 0;
