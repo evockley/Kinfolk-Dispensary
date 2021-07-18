@@ -99,8 +99,9 @@
 
             </div>
         </div>
-        <div class="link-out">
+        <div class="link-out next">
             <h6>Full Events Calendar</h6>
+            <img src="images/next-arrow.png" alt="" width: 100%>
         </div>
 
     </section>
@@ -115,12 +116,23 @@
         <div class="get-mmj-wrapper">
             <div class="get-mmj-grid">
                 <div class="get-mmj-step schedule">
+                    <div class="get-mmj-step-number">
+                        <div class="get-mmj-step-number-highlight"></div>
+                        <h5> 1 </h5>
+                    </div>
                     <h4>Schedule</h4>
                 </div>
                 <div class="get-mmj-step submit">
+                    <div>
+                        <h5>2</h5>
+                    </div>
                     <h4>Submit</h4>
                 </div>
+
                 <div class="get-mmj-step pay">
+                    <div>
+                        <h5>3</h5>
+                    </div>
                     <h4>Pay</h4>
                 </div>
                 <div class="get-mmj-description">
@@ -130,13 +142,16 @@
                         repellat dicta accusamus nihil reiciendis nobis.
                     </p>
                 </div>
-                <div class="get-mmj-next">
+                <div class="get-mmj-next next">
                     <h6>
                         Next
                     </h6>
+                    <img src="images/next-arrow.png" alt="" width: 100%>
                 </div>
             </div>
-            <button class="secondary-button get-mmj-button">Get Started!</button>
+            <button class="secondary-button get-mmj-button">
+                <img src="images/leaf-icon.png" alt="">
+                Get Started!</button>
         </div>
 
 
@@ -262,8 +277,9 @@
                     <h5>General Manager</h5>
                 </div>
             </div>
-            <div class="link-out">
+            <div class="link-out next">
                 <h6>Meet the whole team</h6>
+                <img src="images/next-arrow.png" alt="" width: 100%>
             </div>
         </div>
 
@@ -271,15 +287,20 @@
 
     <!-- _________________________________NEED ADVICE?_______________________________ -->
 
-    <section class=" need-advice-section">
+    <section class="need-advice-section">
 
         <div class="need-advice-box">
             <h3>Need Advice?</h3>
+
             <h5>Let our expert budtenders help!</h5>
-            <p>(202)-555-5555</p>
-            <p>help@kinfolk.com</p>
+            <div class="need-advice-contact">
+                <p>(202)-555-5555</p>
+                <p>help@kinfolk.com</p>
+            </div>
+            <div class="need-advice-address">
             <p>400 Massachussetts Avenue NW</p>
             <p>Washington, D.C. 20001</p>
+        </div>
             <button class="secondary-button">Schedule A Visit</button>
 
         </div>
@@ -292,7 +313,7 @@
 
     <section class="home-section map-section">
 
-        <div id="googleMap" style="width:100%;height:450px;"></div>
+        <div id="map" style="width:100%;height:450px;"></div>
 
         <script>
             function myMap() {
@@ -300,7 +321,7 @@
                     center: new google.maps.LatLng(38.900945227141364, -77.01727142882805),
                     zoom: 17,
                 };
-                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                var map = new google.maps.Map(document.getElementById("map"), mapProp);
             }
         </script>
 
@@ -320,7 +341,7 @@
         <div class="footer-grid-wrapper">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <h4>About Us</h4>
+                    <h4>ABOUT US</h4>
                     <h5>Meet the Team</h5>
                     <h5>KINFOLK in the News</h5>
                     <h5>Cannabis News</h5>
@@ -330,26 +351,36 @@
                 </div>
 
                 <div class="footer-patients">
-                    <h4>Patients</h4>
+                    <h4>PATIENTS</h4>
                     <h5>Patient Benefits</h5>
                     <h5>DC Residents</h5>
                     <h5>Out of State Patients</h5>
-
+                    <hr>
                     <h5>Apply for a Card</h5>
                     <h5>Renew a Card</h5>
                 </div>
 
                 <div class="footer-contact">
-                    <h4>Contact</h4>
+                    <h4>CONTACT</h4>
                     <h5>help@kinfolk.com</h5>
                     <h5>(202)-758-3795</h5>
-
-                    <h5>KINFOLK</h5>
-                    <p>433 Massachusetts Ave. NW
-                        Washington D.C. 20001</p>
+                    <div class="footer-address">
+                        <h5>KINFOLK</h5>
+                        <p>433 Massachusetts Ave. NW
+                            Washington D.C. 20001</p>
+                    </div>
                 </div>
-                <div class="social">INSERT SOCIAL ICONS HERE</div>
-                <div class="copyright">©2021</div>
+                <div class="social">
+                    <img src="images/facebook-icon.png" alt="">
+                    <img src="images/linkedin-icon.png" alt="">
+                    <img src="images/twitter-icon.png" alt="">
+                    <img src="images/instagram-icon.png" alt="">
+                    <img src="images/spotify-icon.png" alt="">
+
+                </div>
+                <div class="copyright">
+                    <p>©2021</p>
+                </div>
                 <div class="button"><button class="primary-button">Order Online</button></div>
             </div>
         </div>
@@ -362,6 +393,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
