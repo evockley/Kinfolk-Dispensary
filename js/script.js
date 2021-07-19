@@ -172,3 +172,7 @@ const map = new google.maps.Map(document.getElementById("map"), {
       ],
   });
   
+
+  $("schedule").on ("click", function() {
+    $(".get-mmj-step-number-highlight").css("opacity", "100%")
+  }); 

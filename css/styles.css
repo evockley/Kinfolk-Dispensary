@@ -160,6 +160,8 @@ span {
     background-image: linear-gradient(#000000, #00000000);
     height: 10vw;
     width: 100vw;
+    position:absolute;
+    top:0
 }
 
 .nav ul {
@@ -260,39 +262,52 @@ span {
 /* _________________________________HERO_______________________________ */
 
 .hero {
-    background-image: linear-gradient(#FFFFFF, #d1d1d1);
-    height: 90vh;
+    background: url("../images/kinfolk_final_homepage_hero_image.jpg");
+    height: 150vh;
+    background-size: cover;
+    margin: -40vh 0 0 0 ;
+    background-repeat: no-repeat;
+
+
 }
 
 .hero h1 {
     font-size: 3em;
     letter-spacing: .1ch;
     margin: 10px 0;
+    color:white;
+    text-shadow: #333132 0 0 4px;
+    opacity: 85%;
 }
 
-.hero p {
+.hero-content p {
     margin: 0 0 16px 0;
+    color:white;
+    text-shadow: #333132 0 0 4px;
 }
 
 .hero-content {
     position: absolute;
-    bottom: 200px
+    bottom: 100px
 }
 
 /* _________________________________EVENTS_______________________________ */
 
 .events-wrapper {
-    margin: -16vh 0 0 0;
+    margin: -10% 0 0 0;
     display: flex;
     justify-content: center;
     gap: 10%
 }
 
-.event-card-info {
+.event-card-header {
     background-color: White;
     border-radius: 55px 55px 0 0;
-    padding: 24px 24px 0;
+    padding: 24px 0 1em 0;
     margin: 0;
+}
+.event-card-header *{
+    margin-left: 5vw;
 }
 
 .event-card {
@@ -310,7 +325,7 @@ span {
 }
 
 .event-card:hover {
-    box-shadow: #c0c0c0 0 4px 20px;
+    box-shadow: #333132 0 4px 20px;
 }
 
 .event-card-button {
@@ -320,17 +335,17 @@ span {
 }
 
 .left-event-card {
-    background-image: url(/Users/evan/Documents/GitHub/Kinfolk-Dispensary/images/cooking.png);
+    background: url("../images/event2.png");
     background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100%;
+    background-position: top;
+    background-size: 150%;
 }
 
 .right-event-card {
-    background-image: url(/Users/evan/Documents/GitHub/Kinfolk-Dispensary/images/Mixing.png);
+    background: url("../images/event1.png");
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: 100%;
+    background-size: 150%;
 }
 
 /* _________________________________GET A MMJ CARD_______________________________ */
@@ -470,8 +485,11 @@ margin: auto 2vw 0 auto
     margin: 15vh 0;
     border-radius: 55px 55px 20px 20px;
     box-shadow: #00000050 0 0 10px;
+    transition: 200ms ease-in;
 }
-
+.what-strain-card:hover{
+    filter: invert(100%);
+}
 
 .what-strain-card img {
     max-width: 120px;
