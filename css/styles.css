@@ -379,22 +379,35 @@ font-size: 2.2em;
 .get-mmj-grid {
     display: grid;
     grid-template-columns: .8fr 2fr;
-    grid-template-rows: 1fr 1fr .25fr .5fr;
+    grid-template-rows: 1fr 1fr .25fr;
     grid-template-areas:
     "schedule description" 
     "submit description" 
     "pay next";
     gap: 16px;
-    margin-bottom: 2vh;
-   
-}
-.get-mmj-grid p{
-margin: 0 0 0 8%;
-padding: 0;
+    margin:3em 0 9vh 0;   
 }
 
 .schedule {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     grid-area: schedule;
+    padding: 1.5em 10% 1.5em 12%;
+    background-color: white;
+    border: solid black .25px;
+    box-sizing: border-box;
+    box-shadow: lightgray 0 0 10px; 
+    border-radius: 100px 16px 16px 100px;
+    position: relative;
+    z-index: -2;
+}
+.get-mmj-step-number h5{
+    color: white;
+    opacity: 100%;
+    font-weight: bold;
+    z-index: 1000000;
+    margin: 2px 0 0 0 
 }
 
 .submit {
@@ -405,22 +418,20 @@ padding: 0;
     grid-area: pay;
 }
 .get-mmj-step-number-highlight{
-    width: 82px;
-    height: 82px;
-    background-color: black;
+    width: 86px;
+    height: 86px;
+    background-color: #333132;
     opacity: 100%;
     border-radius: 100px;
-    visibility: hidden;
     position:absolute;
     left: 0px;
-    top: 2px;
-    /* z-index: -1; */
+    top: 0px;
+    z-index: -1;
 }
 
 .get-mmj-step-number-highlight h5{
         z-index: 10000
     }
-
 
 .get-mmj-step{
     display: flex;
@@ -449,8 +460,15 @@ padding: 0;
 }
 
 .get-mmj-description {
+    margin: 0 0 0 8%;
     grid-area: description;
     font-size: larger;
+}
+.get-mmj-description h4{
+    margin: 0 0 1em 0
+}
+.get-mmj-description p{
+    line-height: 150%;
 }
 .get-mmj-next{
     grid-area: next;
@@ -458,7 +476,7 @@ margin: auto 2vw 0 auto
 }
 
 .carousel{
-    margin-top: 15vh;
+    margin-top: 20vh;
 }
 .carousel-indicators button{
     background-color:#FF5E2D !important;
