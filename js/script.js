@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 const map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 38.900945227141364, lng: -77.01727142882805 },
     zoom: 17,
@@ -173,6 +185,3 @@ const map = new google.maps.Map(document.getElementById("map"), {
   });
   
 
-  $("schedule").on ("click", function() {
-    $(".get-mmj-step-number-highlight").css("opacity", "100%")
-  }); 

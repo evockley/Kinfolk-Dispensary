@@ -59,7 +59,7 @@ h6 {
 
 p {
     font-family: "Noto Sans";
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 400;
     margin: .5em 0;
     padding: 0;
@@ -405,18 +405,23 @@ padding: 0;
     grid-area: pay;
 }
 .get-mmj-step-number-highlight{
-    width: 77px;
-    height: 77px;
+    width: 82px;
+    height: 82px;
     background-color: black;
     opacity: 100%;
     border-radius: 100px;
-    display: none;
+    visibility: hidden;
     position:absolute;
     left: 0px;
-    top: 0;
-    z-index: -1;
-
+    top: 2px;
+    /* z-index: -1; */
 }
+
+.get-mmj-step-number-highlight h5{
+        z-index: 10000
+    }
+
+
 .get-mmj-step{
     display: flex;
     justify-content: space-between;
