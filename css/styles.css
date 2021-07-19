@@ -54,6 +54,7 @@ h6 {
     font-weight: 400;
     margin: 0;
     padding: 0;
+    margin-bottom: 0 !important;
 }
 
 p {
@@ -75,6 +76,7 @@ span {
 .section-heading{
     display: flex;
     justify-content: center;
+    margin: 40px
 }
 
 .next{
@@ -97,6 +99,7 @@ span {
 .link-out {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     margin: 3em 0 0 0;
 }
 
@@ -185,9 +188,9 @@ span {
     flex-direction: column;
     background: #33313250;
     position: absolute;
-    top: 15.2vh;
+    top: 160px;
     padding: 2vh 0;
-    border: solid white 2px;
+    border: solid white 1px;
     border-top: none;
     border-radius: 0 0 20px 20px;
     box-shadow: #00000040 0 0 10px;
@@ -265,6 +268,7 @@ span {
     background: url("../images/kinfolk_final_homepage_hero_image.jpg");
     height: 150vh;
     background-size: cover;
+    
     margin: -40vh 0 0 0 ;
     background-repeat: no-repeat;
 
@@ -281,7 +285,8 @@ span {
 }
 
 .hero-content p {
-    margin: 0 0 16px 0;
+    margin: 1em 0 16px 0;
+    font-size: larger;
     color:white;
     text-shadow: #333132 0 0 4px;
 }
@@ -289,6 +294,10 @@ span {
 .hero-content {
     position: absolute;
     bottom: 100px
+}
+
+.hero-content button{
+    margin-top: 3vh;
 }
 
 /* _________________________________EVENTS_______________________________ */
@@ -303,9 +312,15 @@ span {
 .event-card-header {
     background-color: White;
     border-radius: 55px 55px 0 0;
-    padding: 24px 0 1em 0;
+    padding: 24px 0 0 0;
     margin: 0;
 }
+
+.event-card-header h3{
+font-family: "Amiri";
+font-size: 2.2em;
+}
+
 .event-card-header *{
     margin-left: 5vw;
 }
@@ -439,7 +454,28 @@ margin: auto 2vw 0 auto
 
 .carousel{
     margin-top: 15vh;
+}
+.carousel-indicators button{
+    background-color:#FF5E2D !important;
+    height: 5px !important;
+}
+.carousel-control-next{
+    background-color:white !important;
+    opacity: 20% !important;
+}
+.carousel-control-next:hover{
+    background-color:white !important;
+    opacity: 25% !important;
+}
 
+
+.carousel-control-prev{
+    background-color:white !important;
+    opacity: 15% !important;
+}
+.carousel-control-prev:hover{
+    background-color:white !important;
+    opacity: 25% !important;
 }
 
 
@@ -454,7 +490,8 @@ margin: auto 2vw 0 auto
 }
 
 .what-strain-background {
-    background: url("../images/plantBackground.png")
+    background: url("../images/plantBackground.png");
+
 }
 
 .what-strain-wrapper {
@@ -487,7 +524,7 @@ margin: auto 2vw 0 auto
     box-shadow: #00000050 0 0 10px;
     transition: 200ms ease-in;
 }
-.what-strain-card:hover{
+.what-strain-card:hover {
     filter: invert(100%);
 }
 
@@ -583,7 +620,7 @@ margin-top: 10vh;
     background-size: 100%;
     grid-area: corey;
     margin: 5vh 0;
-    transition: 600ms ease-out
+    transition: 700ms ease-out
 }
 
 .corey:hover {
@@ -598,7 +635,7 @@ margin-top: 10vh;
     background-position: center;
     background-size: 100%;
     grid-area: mike;
-    transition: 600ms ease-out;
+    transition: 700ms ease-out;
 }
 
 .mike:hover {
@@ -613,7 +650,7 @@ margin-top: 10vh;
     background-position: center;
     background-size: 100%;
     grid-area: vanessa;
-    transition: 600ms ease-out
+    transition: 700ms ease-out
 }
 
 .vanessa:hover {
