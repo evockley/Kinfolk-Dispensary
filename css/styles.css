@@ -19,7 +19,7 @@ h1 {
 
 h2 {
     font-family: "Amiri";
-    font-size: 40px;
+    font-size: 50px;
     margin: 0 0 80px 0;
     padding: 0;
 }
@@ -73,7 +73,9 @@ span {
     padding: 0;
 }
 
-.section-heading{
+.section-heading h2{
+    font-size: 50px;
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
     margin: 40px
@@ -278,10 +280,11 @@ span {
 
 .hero {
     background: url("../images/kinfolk_final_homepage_hero_image.jpg");
-    height: 150vh;
+    height: 120vh;
+    background-attachment: fixed;
     background-size: cover;
-    
-    margin: -40vh 0 0 0 ;
+    background-position: bottom;
+    margin: 0 0 0 0;
     background-repeat: no-repeat;
 
 
@@ -305,7 +308,7 @@ span {
 
 .hero-content {
     position: absolute;
-    bottom: 100px
+    top: 62%
 }
 
 .hero-content button{
@@ -315,7 +318,7 @@ span {
 /* _________________________________EVENTS_______________________________ */
 
 .events-wrapper {
-    margin: -10% 0 0 0;
+    margin: -12% 0 0 0;
     display: flex;
     justify-content: center;
     gap: 10%
@@ -331,11 +334,14 @@ span {
 .event-card-header h3{
 font-family: "Amiri";
 font-size: 2.2em;
+margin: 0 0 8px 5vw;
 }
 
-.event-card-header *{
-    margin-left: 5vw;
-}
+.event-card-header h5{
+    margin: 0 0 1.4em 5vw;
+    font-size: 1.1em;
+
+ }
 
 .event-card {
     margin: 0;
@@ -375,6 +381,10 @@ font-size: 2.2em;
     background-size: 150%;
 }
 
+.events-section .link-out{
+    margin-right: 16px;
+}
+
 /* _________________________________GET A MMJ CARD_______________________________ */
 
 .mmj-card-section{
@@ -386,12 +396,12 @@ font-size: 2.2em;
     flex-direction: column;
     align-items: center;
     max-width: 70%;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 15vh auto;
 }
 .get-mmj-grid {
     display: grid;
     grid-template-columns: .8fr 2fr;
-    grid-template-rows: 1fr 1fr .25fr;
+    grid-template-rows: 10vh 10vh 10vh;
     grid-template-areas:
     "schedule description" 
     "submit description" 
@@ -430,8 +440,8 @@ font-size: 2.2em;
     grid-area: pay;
 }
 .get-mmj-step-number-highlight{
-    width: 86px;
-    height: 86px;
+    width: 10vh;
+    height: 10vh;
     background-color: #333132;
     opacity: 100%;
     border-radius: 100px;
@@ -487,31 +497,6 @@ font-size: 2.2em;
 margin: auto 2vw 0 auto
 }
 
-.carousel{
-    margin-top: 20vh;
-}
-.carousel-indicators button{
-    background-color:#FF5E2D !important;
-    height: 5px !important;
-}
-.carousel-control-next{
-    background-color:white !important;
-    opacity: 20% !important;
-}
-.carousel-control-next:hover{
-    background-color:white !important;
-    opacity: 25% !important;
-}
-
-
-.carousel-control-prev{
-    background-color:white !important;
-    opacity: 15% !important;
-}
-.carousel-control-prev:hover{
-    background-color:white !important;
-    opacity: 25% !important;
-}
 
 
 
@@ -520,9 +505,7 @@ margin: auto 2vw 0 auto
 .what-strain-section {
     margin: 15vh 0 0 0;
 }
-.what-strain-section h2{
-    margin: 0
-}
+
 
 .what-strain-background {
     background: url("../images/plantBackground.png");
