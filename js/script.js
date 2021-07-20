@@ -1,15 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
 const map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 38.900945227141364, lng: -77.01727142882805 },
     zoom: 17,
